@@ -17,9 +17,10 @@ body {
 }
 
 .header {
-  color: #535657;
+  color: #4F646F;
   font-family: myFirstFont;
   padding-left: 1%;
+  font-size: 25px;
 }
 
 .topnav {
@@ -93,6 +94,7 @@ body {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  border-radius: 20px;
 }
 
 .button:hover {
