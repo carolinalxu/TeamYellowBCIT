@@ -1,0 +1,302 @@
+.topnav {
+    color: #535657;
+    overflow: hidden;
+    background-color: #535657;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #535657;
+}
+
+.topnav a.active {
+    background-color: #B7ADCF;
+    color: white;
+}
+
+
+body {
+    margin: 0px;
+    font-family: 'Unbounded', cursive;
+    background-color: #B7ADCF;
+
+}
+
+input {
+    font-family: 'Unbounded', cursive;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 12px;
+    height: 30px;
+    width: 50%;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+button {
+    font-family: 'Unbounded', cursive;
+    width: 40%;
+    height: 36px;
+    border: 0px;
+    border-radius: 1000px;
+    background: #dee7e7;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 186px);
+    grid-template:
+        "a b c" 120px
+        "d d d" 2px "g e h" 200px
+        "g e h" 200px
+        "g f h" 80px
+        "i i i" 110px
+        "j j j" 2px
+        "k k k" 100px
+        "l l l" 350px
+        "m m m" 2px
+        "n n n" 160px
+        "o o o" 2px
+        ". p ." 500px
+        "q q q" 2px
+        "r r r" 10px
+    ;
+    gap: 5px;
+}
+
+
+.childa {
+    grid-area: a;
+    background-color: #B7ADCF;
+}
+
+
+@keyframes imageShow {
+    0% {
+        opacity: 10%;
+    }
+
+    25% {
+        opacity: 30%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    75% {
+        opacity: 30%;
+    }
+
+    100% {
+        opacity: 10%;
+    }
+}
+
+.flashing-text {
+    bottom: 120px;
+    animation-name: imageShow;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    opacity: 0%;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.childb {
+    grid-area: b;
+    background-color: #B7ADCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.name {
+    color: #535657;
+}
+
+.childc {
+    background-color: #B7ADCF;
+    grid-area: c;
+
+}
+
+.childd {
+    background-color: #4f646f;
+    grid-area: d;
+}
+
+.childe {
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.childf {
+    background-color: transparent;
+    grid-area: f;
+    border-radius: 80px;
+    border: 2px solid #535657;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    font-weight: bolder;
+    width: 75%;
+    margin-left: 12%;
+}
+
+.childg {
+    background-color: #B7ADCF;
+    grid-area: g;
+}
+
+.childh {
+    background-color: #B7ADCF;
+    grid-area: h;
+}
+
+.childi {
+    background-color: #B7ADCF;
+    grid-area: i;
+
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.childj {
+    background-color: #4f646f;
+    grid-area: j;
+}
+
+.childk {
+    background-color: #B7ADCF;
+    grid-area: k;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.childl {
+    background-color: #B7ADCF;
+    grid-area: l;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.childm {
+    background-color: #4f646f;
+    grid-area: m;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.childn {
+    background-color: #B7ADCF;
+    grid-area: n;
+}
+
+.childo {
+    background-color: #4f646f;
+    grid-area: o;
+}
+
+.childp {
+    background-color: #B7ADCF;
+    grid-area: p;
+}
+
+.childq {
+    background-color: #4f646f;
+    grid-area: q;
+}
+
+
+.social-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.submit {
+    height: 40px
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+#message {
+    height: 88px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+}
+
+.news-check {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+#check {
+    height: 18px;
+    width: 18px;
+}
+
+#send {
+    width: 280px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+button {
+    margin-top: 12px;
+}
